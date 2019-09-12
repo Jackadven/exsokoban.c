@@ -5,7 +5,7 @@
  *   SOKOBAN, com movimentacao nas teclas hjkl                             *
  *   Copyright (C) 2019         by: Jefferson Queiroz Da Costa             *
  *                                  Leandro Dantas Lima                    *
- *                                  Arthur                                 *
+ *                                  Arthur Caldas Trigueiro                *
  *                                                                         *
  ***************************************************************************
  *   This program is free software; you can redistribute it and/or modify  *
@@ -31,6 +31,10 @@
  *   Email: leandroautocontrole@gmail.com                                  *
  *   Webpage: http://beco.poli.br/leandroautocontrole                      *
  *   Phone: (81) 98861-9469                                                *
+ *   Arthur Caldas Trigueiro                                               *
+ *   Email: arthurcaldas99@gmail.com                                       *
+ *   Webpage: http://beco.poli.br/arthurcaldas99                           *
+ *   Phone: (81) 987302181                                                 *
  ***************************************************************************/
 
 /*
