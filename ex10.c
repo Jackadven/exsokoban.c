@@ -32,7 +32,7 @@
  *                                                                         *
  *   Leandro Dantas Lima                                                   *
  *   Email: leandroautocontrole@gmail.com                                  *
- *   Webpage: http://beco.poli.br/leandroautocontrole@gmail.com            *
+ *   Webpage: http://beco.poli.br/leandroautocontrole                      *
  *   Phone: (81) 98861-9469                                                *
  *                                                                         *
  *   Arthur Caldas Trigueiro                                               *
