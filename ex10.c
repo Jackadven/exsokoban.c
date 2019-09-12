@@ -3,8 +3,9 @@
  *                                                                         *
  *   programa que declare uma matriz 3D de strings para labirinto do jogo  *
  *   SOKOBAN, com movimentacao nas teclas hjkl                             *
- *   Copyright (C) 2019         by: Jefferson Queiroz Da Costai            *
- *                                                                         *
+ *   Copyright (C) 2019         by: Jefferson Queiroz Da Costa             *
+ *                                  Leandro Dantas Lima                    *
+ *                                  Arthur                                 *
  *                                                                         *
  ***************************************************************************
  *   This program is free software; you can redistribute it and/or modify  *
@@ -21,11 +22,15 @@
  *   Free Software Foundation, Inc.,                                       *
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************
- *   To contact the author, please write to:                               *
+ *   To contact the authors, please write to:                              *
  *   Jefferson Queiroz Da Costa                                            *
  *   Email: jeffersonadven7@gmail.com                                      *
- *   Webpage: http://beco.poli.br/username                                 *
+ *   Webpage: http://beco.poli.br/########username  (colocar teu username) *
  *   Phone: (87) 99951-1215                                                *
+ *   Leandro Dantas Lima                                                   *
+ *   Email: leandroautocontrole@gmail.com                                  *
+ *   Webpage: http://beco.poli.br/leandroautocontrole                      *
+ *   Phone: (81) 98861-9469                                                *
  ***************************************************************************/
 
 /*
@@ -46,11 +51,13 @@
 
 
 /* ---------------------------------------------------------------------- */
-/* Funcao: Imprir a matriz 3d e movimentar-se nela
+/* Funcao: Imprimir a matriz 3d e movimentar-se nela
  * 
- * Entrada: muvimetacao do usuario
+ * Entrada: movimetacao do usuario
  *
- * Saida: Printar a matriz 3d 
+ * Saida: Printar a matriz 3d
+ * 
+ *  ######## nao deveria ter o return SUCCESS tambem nao? ##########
  */
 int main(void)
 {
