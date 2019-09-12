@@ -1,8 +1,9 @@
 /***************************************************************************
  *   ex10.c                                   Version 20190912.090014      *
  *                                                                         *
- *   programa que declare uma matriz 3D de strings para labirinto do jogo  *
- *   SOKOBAN, com movimentacao nas teclas hjkl                             *
+ *   PROGRAMA QUE DECLARE UMA MATRIZ 3D DE STRINGS PARA LABIRINTO DO JOGO  *
+ *   SOKOBAN, COM MOVIMENTACAO NAS TECLAS, <H>,<J>,<K> e <L>.              *
+ *                                                                         *
  *   Copyright (C) 2019         by: Jefferson Queiroz Da Costa             *
  *                                  Leandro Dantas Lima                    *
  *                                  Arthur Caldas Trigueiro                *
@@ -23,14 +24,17 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************
  *   To contact the authors, please write to:                              *
+ *                                                                         *
  *   Jefferson Queiroz Da Costa                                            *
  *   Email: jeffersonadven7@gmail.com                                      *
  *   Webpage: http://beco.poli.br/########username  (colocar teu username) *
  *   Phone: (87) 99951-1215                                                *
+ *                                                                         *
  *   Leandro Dantas Lima                                                   *
  *   Email: leandroautocontrole@gmail.com                                  *
- *   Webpage: http://beco.poli.br/leandroautocontrole                      *
+ *   Webpage: http://beco.poli.br/leandroautocontrole@gmail.com            *
  *   Phone: (81) 98861-9469                                                *
+ *                                                                         *
  *   Arthur Caldas Trigueiro                                               *
  *   Email: arthurcaldas99@gmail.com                                       *
  *   Webpage: http://beco.poli.br/arthurcaldas99                           *
@@ -57,27 +61,29 @@
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
  * 
- * Entrada: movimetacao do usuario
+ * Entrada: Movimetacao do usuario
  *
  * Saida: Printar a matriz 3d
  * 
  *  ######## nao deveria ter o return SUCCESS tambem nao? ##########
  */
+
 int main(void)
 {
     /* local declarations */
     int i; /* general index */
    /*char labirinto[1][7][7]=  /Criacao do labirinto/ 
     {   
-        "####",
-        "#  #",
+        "####  ",
+        "#  #  ",
         "#  ###",
         "#HO  #",
         "#  H #",
         "#  ###",
-        "####"
+        "####  "
     }
     */
+
     
     return EXIT_SUCCESS;
 }
