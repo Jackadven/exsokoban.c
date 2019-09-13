@@ -57,9 +57,9 @@
 /* ---------------------------------------------------------------------- */
 /* prototypes */
 
-#define MAP_WIDTH = 10
-#define MAP_HEIDTH = 10
-#define STAGE = 1
+#define MAP_WIDTH  10
+#define MAP_HEIDTH  10
+#define STAGE  10
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
