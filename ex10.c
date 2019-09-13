@@ -57,9 +57,9 @@
 /* ---------------------------------------------------------------------- */
 /* prototypes */
 
-#define MAP_WIDTH  10
-#define MAP_HEIDTH  10
-#define STAGE  10
+#define MAP_WIDTH  6  /*Eixo X */
+#define MAP_HEIDTH  7 /*Eixo Y */
+#define STAGE  1 /*Fases do jogo*/
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
@@ -75,7 +75,11 @@ int main(void)
 {
     /* local declarations */
     int i; /* general index */
-    char map [STAGE][MAP_HEIDTH][MAP_WIDTH]=
+    int x; /*Eixo X*/
+    int y; /*Eixo Y*/
+    
+    /*Declaracao da matriz apartir dos valores dos defines*/
+    char map [MAP_HEIDTH][MAP_WIDTH]=
     {   
         "####  ",
         "# X#  ",
@@ -84,12 +88,17 @@ int main(void)
         "#  H #",
         "#X ###",
         "####  "
-    };
+    }; 
     
-    
-        printf("%s", map);
-    
-  
+    for(y = 0; y < 7; y++)
+    {
+        for(x = 0; x < 6; x++)
+        {
+            printf("%c", map [y][x]);
+        }
+        printf("\n");
+    }
+
     return EXIT_SUCCESS;
 }
 
