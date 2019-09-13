@@ -73,15 +73,15 @@ int main(void)
 {
     /* local declarations */
     int i; /* general index */
-    char map []=
+    char map [7][6]=
     {   
-        "####  ",
-        "#  #  ",
-        "#  ###",
-        "#HO  #",
-        "#  H #",
-        "#  ###",
-        "####  "
+        "####  \n",
+        "#  #  \n",
+        "#  ###\n",
+        "#HO  #\n",
+        "#  H #\n",
+        "#  ###\n",
+        "####  \n"
     };
     
     printf("%s", map);
