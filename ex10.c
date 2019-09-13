@@ -56,8 +56,10 @@
 
 /* ---------------------------------------------------------------------- */
 /* prototypes */
+
 #define MAP_WIDTH = 10
 #define MAP_HEIDTH = 10
+#define STAGE = 1
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
@@ -73,7 +75,7 @@ int main(void)
 {
     /* local declarations */
     int i; /* general index */
-    char map [10][10]=
+    char map [STAGE][MAP_HEIDTH][MAP_WIDTH]=
     {   
         "####  ",
         "# X#  ",
