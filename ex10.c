@@ -27,7 +27,7 @@
  *                                                                         *
  *   Jefferson Queiroz Da Costa                                            *
  *   Email: jeffersonadven7@gmail.com                                      *
- *   Webpage: http://beco.poli.br/########username  (colocar teu username) *
+ *   Webpage: http://beco.poli.br/jackadven                                *
  *   Phone: (87) 99951-1215                                                *
  *                                                                         *
  *   Leandro Dantas Lima                                                   *
@@ -56,8 +56,10 @@
 
 /* ---------------------------------------------------------------------- */
 /* prototypes */
-#define MAP_WIDTH = 7
-#define MAP_HEIDTH = 6
+
+#define MAP_WIDTH  6  /*Eixo X */
+#define MAP_HEIDTH  7 /*Eixo Y */
+#define STAGE  1 /*Fases do jogo*/
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
@@ -72,20 +74,57 @@
 int main(void)
 {
     /* local declarations */
-    int i; /* general index */
-    char map []=
+    /*int i;  general index */
+    int x; /*Eixo X*/
+    int y; /*Eixo Y*/
+    
+    /*Declaracao da matriz apartir dos valores dos defines*/
+    char map [MAP_HEIDTH][MAP_WIDTH]=
     {   
         "####  ",
-        "#  #  ",
+        "# X#  ",
         "#  ###",
         "#HO  #",
         "#  H #",
+<<<<<<< HEAD
         "#  ###",
         "####  "      /* ???????? AQUI NÃO PRECISA DE VÍRGULA???? ???????????? */
     };    /* ??????????? USA-SE PONTO-E-VÍRGULA DEPOIS DAS CHAVES ???????????? */
     
     printf("%s", map);
+=======
+        "#X ###",
+        "####  "
+    }; 
+>>>>>>> develop
     
+    /* Laco para impressao do mapa:
+     * -O laco mais interno imprime cada um dos caracteres da string,
+     *  a qual representa o eixo X;
+     *
+     *  . X comeca referenciando o primeiro elemento da string e o imprime; 
+     *  . Apos isso ele adiciona 1 a variavel que representa o eixo X e
+     *    imprime o proxoimo elemento da string, repetindo ate x < 6;
+     *
+     * -O o primeiro laco ou laco mais externo representa o eixo y;
+     *  . Ele e' responsavel por conter o loco que faz a impressao de 
+     *    todos os caracteres do eixo x;
+     *  . Ele e' responsavel por pular uma linha no eixo y apos a impressao
+     *    dos elementos do eixo x;
+     *  . Apos isso o y incrementa mmais 1 e retorna todo o proceso de 
+     *    impressao do primero laco, ate y < 7 que seria a ultima linha do 
+     *    eixo y. 
+     */   
+     
+    for(y = 0; y < 7; y++)
+    {
+        for(x = 0; x < 6; x++)
+        {
+            printf("%c", map [y][x]);
+        }
+        printf("\n");
+    }
+
     return EXIT_SUCCESS;
 }
 
