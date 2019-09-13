@@ -90,6 +90,16 @@ int main(void)
         "####  "
     }; 
     
+    /* Laco para impressao do mapa:
+     * -O laco mais interno imprime cada um dos caracteres da string,
+     *  a qual representa o eixo X;
+     *
+     *  . X comeca referenciando o primeiro elemento da string e o imprime; 
+     *  . Apos isso ele adiciona 1 a variavel que representa o eixo X e
+     *    imprime o proxoimo elemento da string, repetindo ate x < 6;
+     *
+     * -O o primeiro laco ou laco mais externo 
+     *
     for(y = 0; y < 7; y++)
     {
         for(x = 0; x < 6; x++)
