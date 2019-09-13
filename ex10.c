@@ -56,8 +56,8 @@
 
 /* ---------------------------------------------------------------------- */
 /* prototypes */
-#define MAP_WIDTH = 8
-#define MAP_HEIDTH = 6
+#define MAP_WIDTH = 10
+#define MAP_HEIDTH = 10
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
@@ -73,19 +73,21 @@ int main(void)
 {
     /* local declarations */
     int i; /* general index */
-    char map [8][6]=
+    char map [10][10]=
     {   
-        "####  ",
-        "#  #  ",
-        "#  ###",
-        "#HO  #",
-        "#  H #",
-        "#  ###",
-        "####  "
+        "####  \n",
+        "# X#  \n",
+        "#  ###\n",
+        "#HO  #\n",
+        "#  H #\n",
+        "#X ###\n",
+        "####  \n"
     };
     
-    printf("%s", map);
     
+        printf("%s", map);
+    
+  
     return EXIT_SUCCESS;
 }
 
