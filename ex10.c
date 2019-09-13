@@ -86,18 +86,10 @@ int main(void)
         "#  ###",
         "#HO  #",
         "#  H #",
-<<<<<<< HEAD
-        "#  ###",
-        "####  "      /* ???????? AQUI NÃO PRECISA DE VÍRGULA???? ???????????? */
-    };    /* ??????????? USA-SE PONTO-E-VÍRGULA DEPOIS DAS CHAVES ???????????? */
-    
-    printf("%s", map);
-=======
         "#X ###",
         "####  "
     }; 
->>>>>>> develop
-    
+
     /* Laco para impressao do mapa:
      * -O laco mais interno imprime cada um dos caracteres da string,
      *  a qual representa o eixo X;
