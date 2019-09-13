@@ -27,7 +27,7 @@
  *                                                                         *
  *   Jefferson Queiroz Da Costa                                            *
  *   Email: jeffersonadven7@gmail.com                                      *
- *   Webpage: http://beco.poli.br/########username  (colocar teu username) *
+ *   Webpage: http://beco.poli.br/jackadven                                *
  *   Phone: (87) 99951-1215                                                *
  *                                                                         *
  *   Leandro Dantas Lima                                                   *
@@ -75,13 +75,13 @@ int main(void)
     int i; /* general index */
     char map [10][10]=
     {   
-        "####  \n",
-        "# X#  \n",
-        "#  ###\n",
-        "#HO  #\n",
-        "#  H #\n",
-        "#X ###\n",
-        "####  \n"
+        "####  ",
+        "# X#  ",
+        "#  ###",
+        "#HO  #",
+        "#  H #",
+        "#X ###",
+        "####  "
     };
     
     
