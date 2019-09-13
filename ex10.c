@@ -74,7 +74,7 @@
 int main(void)
 {
     /* local declarations */
-    int i; /* general index */
+    /*int i;  general index */
     int x; /*Eixo X*/
     int y; /*Eixo Y*/
     
@@ -98,8 +98,16 @@ int main(void)
      *  . Apos isso ele adiciona 1 a variavel que representa o eixo X e
      *    imprime o proxoimo elemento da string, repetindo ate x < 6;
      *
-     * -O o primeiro laco ou laco mais externo 
-     *
+     * -O o primeiro laco ou laco mais externo representa o eixo y;
+     *  . Ele e' responsavel por conter o loco que faz a impressao de 
+     *    todos os caracteres do eixo x;
+     *  . Ele e' responsavel por pular uma linha no eixo y apos a impressao
+     *    dos elementos do eixo x;
+     *  . Apos isso o y incrementa mmais 1 e retorna todo o proceso de 
+     *    impressao do primero laco, ate y < 7 que seria a ultima linha do 
+     *    eixo y. 
+     */   
+     
     for(y = 0; y < 7; y++)
     {
         for(x = 0; x < 6; x++)
