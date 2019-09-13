@@ -56,7 +56,8 @@
 
 /* ---------------------------------------------------------------------- */
 /* prototypes */
-
+define MAP_WIDTH 7
+define MAP_HEIDTH 6
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
@@ -72,7 +73,7 @@ int main(void)
 {
     /* local declarations */
     int i; /* general index */
-   /*char labirinto[1][7][7]=  /Criacao do labirinto/ 
+    char map []=
     {   
         "####  ",
         "#  #  ",
@@ -82,8 +83,8 @@ int main(void)
         "#  ###",
         "####  "
     }
-    */
-
+    
+    printf("%s", map);
     
     return EXIT_SUCCESS;
 }
