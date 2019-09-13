@@ -56,8 +56,8 @@
 
 /* ---------------------------------------------------------------------- */
 /* prototypes */
-define MAP_WIDTH 7
-define MAP_HEIDTH 6
+define MAP_WIDTH = 7
+define MAP_HEIDTH = 6
 
 /* ---------------------------------------------------------------------- */
 /* Funcao: Imprimir a matriz 3d e movimentar-se nela
