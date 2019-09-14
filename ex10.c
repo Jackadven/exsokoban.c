@@ -57,8 +57,8 @@
 /* ---------------------------------------------------------------------- */
 /* prototypes */
 
-#define MAP_WIDTH  6  /*Eixo X */
-#define MAP_HEIDTH  7 /*Eixo Y */
+#define MAP_WIDTH  7  /*Eixo X */
+#define MAP_HEIDTH  8 /*Eixo Y */
 #define STAGE  1 /*Fases do jogo*/
 
 /* ---------------------------------------------------------------------- */
@@ -85,10 +85,11 @@ int main(void)
         "#HO  #",
         "#  H #",
         "#X ###",
-        "####  "
+        "####  ",
     }; 
 
-    /* ###### LACO PARA IMPRESSAO DO MAPA ######
+    /* ###### L
+     * ACO PARA IMPRESSAO DO MAPA ######
      *
      * - O laco mais interno imprime cada um dos caracteres da string,
      *   o qual representa o eixo X;
@@ -113,9 +114,11 @@ int main(void)
         for(x = 0; x < 6; x++)
         {
             printf("%c", map [y][x]);
+    
         }
         printf("\n");
     }
+
 
     return EXIT_SUCCESS;
 }
