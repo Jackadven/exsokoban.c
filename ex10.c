@@ -75,6 +75,7 @@ int main(void)
     /* local declarations */
     int x; /*Eixo X*/
     int y; /*Eixo Y*/
+    char tecla; /* tecla apertada */
     char h, H, j, J, k, K, l, L;   /* declaracao das teclas de acao */
     
     /*Declaracao da matriz a partir dos valores dos defines*/
@@ -92,7 +93,8 @@ int main(void)
 
     
     
-    /* ###### LACO PARA IMPRESSAO DO MAPA ######
+    /* 
+     * ###### LACO PARA IMPRESSAO DO MAPA ######
      *
      * - O laco mais interno imprime cada um dos caracteres da string,
      *   o qual representa o eixo X;
@@ -114,6 +116,7 @@ int main(void)
     for(y = 0; y < 7; y++)
     {
 
+
         for(x = 0; x < 6; x++)
     
         {
@@ -125,11 +128,10 @@ int main(void)
     }
 
 
-    char tecla;
     printf("\nDIGITE UMA TECLA DE MOVIMENTACAO <H> - up, <J> - down, <K> - left ou <L> - right: ");
     scanf("%c", &tecla);
 
-    if (tecla == h || H)
+    if (tecla == h ||tecla == H)
         printf("VOCE MOVEU O SOKO PARA CIMA!\n\n");
     
 
@@ -145,8 +147,7 @@ int main(void)
                     "#X ###",
                     "####  "
         
-        
-                    }; */
+                }; */
           
     return EXIT_SUCCESS;
 }
