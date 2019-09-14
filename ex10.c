@@ -62,23 +62,21 @@
 #define STAGE  1 /*Fases do jogo*/
 
 /* ---------------------------------------------------------------------- */
-/* Funcao: Imprimir a matriz 3d e movimentar-se nela
+/* Funcao: Imprimir a matriz 3d do prototipo do jogo sokoban e movimentar-se nela.
  * 
- * Entrada: Movimetacao do usuario
+ * Entrada: Teclas <H>, <J>, <K> ou <L> fornecidas pelo usuario.
  *
- * Saida: Printar a matriz 3d
- * 
- *  ######## nao deveria ter o return SUCCESS tambem nao? ##########
+ * Saida: Printar a matriz 3d na tela; return_SUCCESS.
+ *  
  */
 
 int main(void)
 {
     /* local declarations */
-    /*int i;  general index */
     int x; /*Eixo X*/
     int y; /*Eixo Y*/
     
-    /*Declaracao da matriz apartir dos valores dos defines*/
+    /*Declaracao da matriz a partir dos valores dos defines*/
     char map [MAP_HEIDTH][MAP_WIDTH]=
     {   
         "####  ",
@@ -90,26 +88,28 @@ int main(void)
         "####  "
     }; 
 
-    /* Laco para impressao do mapa:
-     * -O laco mais interno imprime cada um dos caracteres da string,
-     *  a qual representa o eixo X;
+    /* ###### LACO PARA IMPRESSAO DO MAPA ######
+     *
+     * - O laco mais interno imprime cada um dos caracteres da string,
+     *   o qual representa o eixo X;
      *
      *  . X comeca referenciando o primeiro elemento da string e o imprime; 
-     *  . Apos isso ele adiciona 1 a variavel que representa o eixo X e
-     *    imprime o proxoimo elemento da string, repetindo ate x < 6;
+     *  . Apos isso ele adiciona 1(um) a variavel que representa o eixo X e
+     *    imprime o proximo elemento da string, repetindo ate x < 6;
      *
-     * -O o primeiro laco ou laco mais externo representa o eixo y;
-     *  . Ele e' responsavel por conter o loco que faz a impressao de 
+     * - O primeiro laco ou laco mais externo representa o eixo y;
+     *  . Ele e' responsavel por conter o laco que faz a impressao de 
      *    todos os caracteres do eixo x;
      *  . Ele e' responsavel por pular uma linha no eixo y apos a impressao
      *    dos elementos do eixo x;
-     *  . Apos isso o y incrementa mmais 1 e retorna todo o proceso de 
+     *  . Apos isso o y incrementa mmais 1(um) e retorna todo o proceso de 
      *    impressao do primero laco, ate y < 7 que seria a ultima linha do 
      *    eixo y. 
      */   
      
     for(y = 0; y < 7; y++)
     {
+
         for(x = 0; x < 6; x++)
         {
             printf("%c", map [y][x]);
