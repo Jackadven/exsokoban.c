@@ -75,6 +75,7 @@ int main(void)
     /* local declarations */
     int x; /*Eixo X*/
     int y; /*Eixo Y*/
+    char h, H, j, J, k, K, l, L;   /* declaracao das teclas de acao */
     
     /*Declaracao da matriz a partir dos valores dos defines*/
     char map [MAP_HEIDTH][MAP_WIDTH]=
@@ -85,11 +86,13 @@ int main(void)
         "#HO  #",
         "#  H #",
         "#X ###",
-        "####  ",
+        "####  "
+    
     }; 
 
-    /* ###### L
-     * ACO PARA IMPRESSAO DO MAPA ######
+    
+    
+    /* ###### LACO PARA IMPRESSAO DO MAPA ######
      *
      * - O laco mais interno imprime cada um dos caracteres da string,
      *   o qual representa o eixo X;
@@ -112,14 +115,39 @@ int main(void)
     {
 
         for(x = 0; x < 6; x++)
+    
         {
             printf("%c", map [y][x]);
     
         }
         printf("\n");
+
     }
 
 
+    char tecla;
+    printf("\nDIGITE UMA TECLA DE MOVIMENTACAO <H> - up, <J> - down, <K> - left ou <L> - right: ");
+    scanf("%c", &tecla);
+
+    if (tecla == h || H)
+        printf("VOCE MOVEU O SOKO PARA CIMA!\n\n");
+    
+
+    /* para cada acao teremos que construir um novo mapa ou moveremos as posicoes automaticamente no mapa/matriz inicial? */
+
+    /* char map [MAP_HEIDTH][MAP_WIDTH]=
+                {
+                    "####  ",
+                    "# X#  ",
+                    "# O###",
+                    "#H   #",
+                    "#  H #",
+                    "#X ###",
+                    "####  "
+        
+        
+                    }; */
+          
     return EXIT_SUCCESS;
 }
 
