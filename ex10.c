@@ -111,7 +111,8 @@ int main(void)
      *  . Apos isso o y incrementa mmais 1(um) e retorna todo o proceso de 
      *    impressao do primero laco, ate y < 7 que seria a ultima linha do 
      *    eixo y. 
-     */   
+   
+   */   
      
     for(y = 0; y < 7; y++)
     {
@@ -122,16 +123,18 @@ int main(void)
         {
             printf("%c", map [y][x]);
     
+    
         }
         printf("\n");
 
+   
     }
 
 
     printf("\nDIGITE UMA TECLA DE MOVIMENTACAO <H> - up, <J> - down, <K> - left ou <L> - right: ");
     scanf("%c", &tecla);
 
-    if (tecla == h ||tecla == H)
+    if (tecla == 'h' ||tecla == 'H')
         printf("VOCE MOVEU O SOKO PARA CIMA!\n\n");
     
 
