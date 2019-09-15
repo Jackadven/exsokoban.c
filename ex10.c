@@ -76,7 +76,7 @@ int main(void)
     int x; /*Eixo X*/
     int y; /*Eixo Y*/
     char tecla; /* tecla apertada */
-    char h, H, j, J, k, K, l, L;   /* declaracao das teclas de acao */
+    char up, down, left, right;   /* declaracao das teclas de acao */
     
     /*Declaracao da matriz a partir dos valores dos defines*/
     char map [MAP_HEIDTH][MAP_WIDTH]=
@@ -91,9 +91,9 @@ int main(void)
     
     }; 
 
-    
-    
     /* 
+     *
+     *
      * ###### LACO PARA IMPRESSAO DO MAPA ######
      *
      * - O laco mais interno imprime cada um dos caracteres da string,
@@ -111,12 +111,10 @@ int main(void)
      *  . Apos isso o y incrementa mmais 1(um) e retorna todo o proceso de 
      *    impressao do primero laco, ate y < 7 que seria a ultima linha do 
      *    eixo y. 
-   
    */   
      
     for(y = 0; y < 7; y++)
     {
-
 
         for(x = 0; x < 6; x++)
     
@@ -127,7 +125,6 @@ int main(void)
         }
         printf("\n");
 
-   
     }
 
 
@@ -135,6 +132,7 @@ int main(void)
     scanf("%c", &tecla);
 
     if (tecla == 'h' ||tecla == 'H')
+        up = tecla;
         printf("VOCE MOVEU O SOKO PARA CIMA!\n\n");
     
 
