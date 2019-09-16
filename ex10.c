@@ -56,8 +56,8 @@
 /* ---------------------------------------------------------------------- */
 /* prototypes */
 
-#define MAP_WIDTH 6
-#define MAP_HEIGHT 7
+#define MAP_WIDTH 7
+#define MAP_HEIGHT 8
 #define PLAYER_POSITION pos_y * MAP_WIDTH + pos_x
 
 /* ---------------------------------------------------------------------- */
