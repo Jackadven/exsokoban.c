@@ -133,19 +133,19 @@ int main(void)
 
     switch(tecla) 
     {
-        case 'h' || 'H':
+        case 'h':
             printf("Voce andou para cima");
         break;
         
-        case 'j' || 'J':
+        case 'j':
             printf("voce andou para baixo");
         break;
 
-        case 'k' || 'K':
+        case 'k':
             printf("voce andou para esquerda");
         break;
 
-        case 'l' || 'L':
+        case 'l':
             printf("voce andou para direita");
         break;    
     }
