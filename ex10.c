@@ -131,10 +131,25 @@ int main(void)
     printf("\nDIGITE UMA TECLA DE MOVIMENTACAO <H> - up, <J> - down, <K> - left ou <L> - right: ");
     scanf("%c", &tecla);
 
-    if (tecla == 'h' ||tecla == 'H')
-        up = tecla;
-        printf("VOCE MOVEU O SOKO PARA CIMA!\n\n");
-    
+    switch(tecla) 
+    {
+        case 'h' || 'H':
+            printf("Voce andou para cima");
+        break;
+        
+        case 'j' || 'J':
+            printf("voce andou para baixo");
+        break;
+
+        case 'k' || 'K':
+            printf("voce andou para esquerda");
+        break;
+
+        case 'l' || 'L':
+            printf("voce andou para direita");
+        break;    
+    }
+
 
     /* para cada acao teremos que construir um novo mapa ou moveremos as posicoes automaticamente no mapa/matriz inicial? */
 
