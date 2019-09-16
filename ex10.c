@@ -81,7 +81,7 @@ char map[] = {
 
 };
 
-int dest_squares[8];                                          /* array to store cell indexes for 'x' cells */
+int dest_squares[7];                                          /* array to store cell indexes for 'x' cells */
 
 int GetDestSquares()                                          /* init 'x' cells indexes */
 {
