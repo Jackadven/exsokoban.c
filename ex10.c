@@ -7,6 +7,7 @@
  *   Copyright (C) 2019         by: Jefferson Queiroz Da Costa             *
  *                                  Leandro Dantas Lima                    *
  *                                  Arthur Caldas Trigueiro                *
+ *                                  Adalto Nathan Gomes De Lima            *
  *                                                                         *
  ***************************************************************************
  *   This program is free software; you can redistribute it and/or modify  *
@@ -39,6 +40,11 @@
  *   Email: arthurcaldas99@gmail.com                                       *
  *   Webpage: http://beco.poli.br/arthurcaldas99                           *
  *   Phone: (81) 987302181                                                 *
+ *                                                                         *
+ *   Adalto Nathan Gomes de Lima                                           *
+ *   Email: an.tec.pec@gmail.com                                           *
+ *   Webpage: http://beco.poli.br/angdl                                    *
+ *   Phone: (81) 98344-2019                                                *
  ***************************************************************************/
 
 /*
