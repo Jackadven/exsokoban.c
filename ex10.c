@@ -97,6 +97,7 @@ int GetDestSquares()                                          /* init 'x' cells 
                                                
             if(map[cell] == 'x' || map[cell] == 'V')          /* if 'x' cell is emty or with box on it */
                 dest_squares[count++] = cell;                 /* store it in array */
+
         }
     }
 
@@ -118,11 +119,14 @@ void GetPosition(int *pos_x, int *pos_y)
                 *pos_x = col;                                 /* store player's x coordinate */
                 *pos_y = row;                                 /* store player's y coordinate */
         
+        
             }
+    
     
     
         }
     }
+
 
 
 }
@@ -136,6 +140,7 @@ void MoveCharacter(int pos_x, int pos_y, int offset)
             (map[PLAYER_POSITION + offset * 2] != '#' ||      /* and box doesn't hit a wall */
              map[PLAYER_POSITION + offset * 2] != 'H' ||      /* or another box */
              map[PLAYER_POSITION + offset * 2] != 'V'))       /* or box on 'x' cell */
+    
     
         {
             map[PLAYER_POSITION] = ' ';                       /* clear previous player's position */
@@ -153,6 +158,7 @@ void MoveCharacter(int pos_x, int pos_y, int offset)
                 map[PLAYER_POSITION - offset] = 'O';          /* if box hits the wall or another box */
                 return;                                       /* don't push it any further */
         
+        
             }
 
             map[PLAYER_POSITION] = 'O';                       /* draw the player in the new position */
@@ -167,7 +173,9 @@ void MoveCharacter(int pos_x, int pos_y, int offset)
         }
 
 
+
     }   
+
 
 
 }
