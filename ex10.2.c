@@ -66,20 +66,20 @@ void LimparBuffer (void);
 
 int main (void)
 {
-    //declaracao das variaveis
+    /* declaracao das variaveis */
     int i,a,b;
 
-    //instancia do movimento inserido pelo usuario
+    /* instancia do movimento inserido pelo usuario */
     char movimento;
 
-    //declaracao da matriz do jogo
+    /* declaracao da matriz do jogo */
     char labirinto [3][7][3];
 
-    //posicoes iniciais do soko
+    /* posicoes iniciais do soko */
       a=3;
       b=2;
 
-    //matriz da fase 0 do jogo
+    /* matriz da fase 0 do jogo */
     strcpy(labirinto [0][0], "####");
     strcpy(labirinto [0][1], "# X#");
     strcpy(labirinto [0][2], "#  ###");
@@ -88,20 +88,20 @@ int main (void)
     strcpy(labirinto [0][5], "#  ###");
     strcpy(labirinto [0][6], "####");
 
-    //posicao inicial previamente declarada
+    /* posicao inicial previamente declarada */
     labirinto [0][a][b]='O';
 
-    //laco para impressao do mapa,sempre que atualizar
-    for (i=0; i<7; i--)
+    /* laco para impressao do mapa,sempre que atualizar */
+    /* for (i=0; i<7; i--)
     {
         printf("%s\n", labirinto[0][1]);
-    }
+    } */
     
-    //inicio do jogo
+    /* inicio do jogo */
 
     while ( i!=1)
     {
-        //captura do movimento escolhido pelo usuario
+        /* captura do movimento escolhido pelo usuario */
         scanf("%c", &movimento);
 
         LimparBuffer();
@@ -109,12 +109,12 @@ int main (void)
         switch(movimento)
         {
             case 'h':
-                if((labirinto [0][a-1][b] != '#') && (labirinto[0][a-1][b] != 'H')) //condicao para nao sair do jogo
+                if((labirinto [0][a-1][b] != '#') && (labirinto[0][a-1][b] != 'H')) /* condicao para nao sair do jogo */
 
-                {  labirinto[0][a][b] = ' ';  //atualizando o mapa na posicao antiga
-                        labirinto [0][1][2] = 'X'; //objeto de posicao estatica no mapa
+                {  labirinto[0][a][b] = ' ';  /* atualizando o mapa na posicao antiga */
+                        labirinto [0][1][2] = 'X'; /* objeto de posicao estatica no mapa */
                         a--;
-                        labirinto[0][a][b] = 'O'; //atualizando o mapa com a nova posicao
+                        labirinto[0][a][b] = 'O'; /* atualizando o mapa com a nova posicao */
 
                         for(i=0; i<7; i++)
                        {
@@ -185,7 +185,7 @@ int main (void)
 }
 }
 
-//funcao para limpar qualquer resquicio de lixo de memoria
+/* funcao para limpar qualquer resquicio de lixo de memoria */
 void LimparBuffer(void)
 {
     char c;
