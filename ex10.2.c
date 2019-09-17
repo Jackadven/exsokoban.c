@@ -1,8 +1,66 @@
-/*Labirinto do jogo SOKOBAN */
+/***************************************************************************
+ *   ex10.c                                   Version 20190912.090014      *
+ *                                                                         *
+ *   PROGRAMA QUE DECLARE UMA MATRIZ 3D DE STRINGS PARA LABIRINTO DO JOGO  *
+ *   SOKOBAN, COM MOVIMENTACAO NAS TECLAS, <H>,<J>,<K> e <L>.              *
+ *                                                                         *
+ *   Copyright (C) 2019         by: Jefferson Queiroz Da Costa             *
+ *                                  Leandro Dantas Lima                    *
+ *                                  Arthur Caldas Trigueiro                *
+ *                                  Adalto Nathan Gomes De Lima            *
+ *                                                                         *
+ ***************************************************************************
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; version 2 of the License.               *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************
+ *   To contact the authors, please write to:                              *
+ *                                                                         *
+ *   Jefferson Queiroz Da Costa                                            *
+ *   Email: jeffersonadven7@gmail.com                                      *
+ *   Webpage: http://beco.poli.br/jackadven                                *
+ *   Phone: (87) 99951-1215                                                *
+ *                                                                         *
+ *   Leandro Dantas Lima                                                   *
+ *   Email: leandroautocontrole@gmail.com                                  *
+ *   Webpage: http://beco.poli.br/leandroautocontrole                      *
+ *   Phone: (81) 98861-9469                                                *
+ *                                                                         *
+ *   Arthur Caldas Trigueiro                                               *
+ *   Email: arthurcaldas99@gmail.com                                       *
+ *   Webpage: http://beco.poli.br/arthurcaldas99                           *
+ *   Phone: (81) 987302181                                                 *
+ *                                                                         *
+ *   Adalto Nathan Gomes de Lima                                           *
+ *   Email: an.tec.pec@gmail.com                                           *
+ *   Webpage: http://beco.poli.br/angdl                                    *
+ *   Phone: (81) 98344-2019                                                *
+ ***************************************************************************/
 
-#include <stdio.h>
+/*
+ * Instrucoes para compilar:
+ * $gcc ex10.c -o ex10.x -Wall -Wextra -g -O0 -DDEBUG=1
+ * opcoes extras: -ansi -pedantic-errors
+ */
+
+/* ---------------------------------------------------------------------- */
+/* includes */
+
+#include <stdio.h> /* Standard I/O functions */
 #include <stdlib.h>
-#include <string.h>
+#include <string.h> /* Strings functions definitions */
+
+/* ---------------------------------------------------------------------- */
 
 void LimparBuffer (void);
 
