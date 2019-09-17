@@ -85,7 +85,7 @@ int dest_squares[7];                                          /* array to store 
 
 int GetDestSquares()                                          /* init 'x' cells indexes */
 {
-    int count, cell;                                          /* 'x' cell number, current cell index */
+
 
     for(int row = 0; row < MAP_HEIGHT; row++)                 /* loop ower map rows */
     {
@@ -105,8 +105,7 @@ int GetDestSquares()                                          /* init 'x' cells 
 
 void GetPosition(int *pos_x, int *pos_y)
 {
-    int cell;                                                 /* current cell index */
-
+    
     for(int row = 0; row < MAP_HEIGHT; row++)                 /* loop ower map rows */
     {
         for(int col = 0; col < MAP_WIDTH; col++)              /* loop ower map columns */
@@ -180,6 +179,10 @@ int main()
     int dest_count;                                           /*  'x' cells counter */
 
     int dest_num = GetDestSquares();                          /* get number of 'x' cells */
+    
+    int cell;                                                 /* ########## current cell index ############*/
+    int count, cell;                                          /* ########## 'x' cell number, current cell index ########### */
+    
 
     printf("%s\n", map);                                      /* print map */
 
